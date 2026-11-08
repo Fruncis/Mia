@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR code per Mia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:24px;box-sizing:border-box;font-family:'Quicksand',system-ui,sans-serif;color:#5b2a45;background:linear-gradient(165deg,#ffeaf3,#ffcbe0 45%,#ff9fc7)}
+    .box{background:rgba(255,255,255,.8);border-radius:44px;padding:28px 24px;text-align:center;max-width:380px;width:100%;box-shadow:0 26px 50px -26px rgba(232,64,95,.5)}
+    h1{font-family:'Dancing Script',cursive;color:#c22d5c;font-size:2.4rem;margin:0 0 8px}
+    #qr{display:grid;place-items:center;background:#fff;border-radius:28px;padding:18px;margin:18px auto}
+    #qr canvas,#qr img{max-width:100%;height:auto}
+    input{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:99px;border:2px solid #bfe1ff;font:inherit;font-size:.9rem;text-align:center;color:#5b2a45}
+    button{margin-top:14px;border:0;border-radius:99px;padding:13px 30px;font:inherit;font-weight:700;color:#fff;cursor:pointer;background:linear-gradient(135deg,#9bd5ff,#3f8fe0)}
+    p{font-size:.92rem;line-height:1.5;margin:6px 0}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>QR code per Mia</h1>
+    <p>Apri questa pagina dal sito pubblicato: l'indirizzo si compila da solo.</p>
+    <div id="qr"></div>
+    <input id="url" aria-label="Indirizzo del sito" inputmode="url">
+    <button id="dl" type="button">Scarica il QR code</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const input = document.getElementById('url');
+    const box = document.getElementById('qr');
+    // indirizzo del sito = questa pagina senza "qr.html"
+    input.value = location.href.replace(/qr\.html.*$/, '').replace(/[?#].*$/, '');
+    function draw() {
+      box.innerHTML = '';
+      new QRCode(box, { text: input.value.trim(), width: 280, height: 280, colorDark: '#c22d5c', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.H });
+    }
+    input.addEventListener('input', draw);
+    draw();
+    document.getElementById('dl').addEventListener('click', () => {
+      const c = box.querySelector('canvas');
+      const src = c ? c.toDataURL('image/png') : box.querySelector('img').src;
+      const a = document.createElement('a');
+      a.href = src; a.download = 'qr-mia.png'; a.click();
+    });
+  </script>
+</body>
+</html>
