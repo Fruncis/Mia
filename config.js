@@ -19,7 +19,7 @@ window.SITE = {
   /* Musica: parte solo nel carosello delle foto (si ferma quando esci).
      videoId = la parte finale del link di YouTube (dopo "v=").
      inizio  = secondo da cui far partire la canzone. */
-  musica: { videoId: "TiebZllW8As", inizio: 0, volume: 70 },
+  musica: { videoId: "TiebZllW8As", inizio: 0, volume: 50 },
 
   /* illustrazione disponibile: "coniglietto", "orsetto", "gattino" */
   step: [
@@ -51,12 +51,12 @@ window.SITE = {
       /* Metti le foto nella cartella "photos" e scrivi qui il nome del file.
          Se una foto non esiste ancora, compare un segnaposto carino. */
       foto: [
-        { src: "photos/foto1.jpg", didascalia: "Il nostro primo ricordo" },
-        { src: "photos/foto2.jpg", didascalia: "Che sorriso!" },
-        { src: "photos/foto3.jpg", didascalia: "Una giornata perfetta" },
-        { src: "photos/foto4.jpg", didascalia: "Sempre insieme" },
+        { src: "photos/primo_ricordo.jpg", didascalia: "Il nostro primo ricordo" },
+        { src: "photos/il_primo_regalo.jpg", didascalia: "Una giornata perfetta" },
+        { src: "photos/un_pensiero_per_te.jpg", didascalia: "Sempre insieme" },
         { src: "photos/foto5.jpg", didascalia: "Te e i tuoi occhi" },
-        { src: "photos/foto6.jpg", didascalia: "Fino alla prossima avventura" }
+        { src: "photos/la_mia_piccolina.jpg", didascalia: "La mia piccolina!" },
+        { src: "photos/alla_prossima_avventura.jpg", didascalia: "Fino alla prossima avventura" }
       ]
     },
 
@@ -68,11 +68,11 @@ window.SITE = {
       bottone: "Continua",
       tuttiObbligatori: true, /* true = il bottone si sblocca dopo averli aperti tutti */
       bigliettini: [
-        "Il tuo sorriso quando ridi davvero.",
-        "Come ti illumini quando vedi un animaletto.",
+        "I tuoi occhi quando sorridi.",
+        "Quando mi mandi lo sticker di un animaletto carino, mi sciolgo.",
         "La tua dolcezza con le persone a cui vuoi bene.",
-        "Il modo in cui canti le canzoni che ami.",
-        "Come mi fai sentire a casa.",
+        "Quanto sei dedita al lavoro",
+        "Come mi sento tranquillo quando sono con te",
         "La tua risata che mi contagia sempre.",
         "Quanto sei tenace, anche quando non lo ammetti.",
         "Semplicemente il fatto che tu sia tu."
@@ -86,14 +86,14 @@ window.SITE = {
       testo: "È sigillata con un cuore.\nToccalo per aprirla.",
       bottone: "Continua",
       lettera: {
-        saluto: "Mia mia, {soprannome},",
+        saluto: "Mia cara, {soprannome},",
         /* Ogni voce della lista è un paragrafo. SOSTITUISCI con le tue parole! */
         paragrafi: [
-          "Scrivi qui la tua lettera: questo è solo un testo di esempio.",
-          "Racconta cosa significa per te, cosa ti ha fatto sorridere di lei quest'anno e cosa speri per il prossimo.",
-          "Più è vero e personale, più le piacerà."
+          "Non sono bravo a scrivere le lettere cercherò di fare del mio meglio.",
+          "Ormai ci conosciamo da quasi 2 mesi, in questo periodo ho avuto il piacere di conoscere sempre meglio la bellissima persona che sei, sei la mia costante dose di felicità, io sulle tue gambe in macchina mentre mi insegnavi lo spagnolo è il ricordo di noi che mi fa' sempre sorridere, dato che tu mi hai regalato questo bellissimo ricordo spero di potertene regalare mille altri così a te.",
+          "So che questo non è un bel periodo per te ma oggi è il tuo giorno e ti meriti di godertelo al massimo."
         ],
-        firma: "Con tutto il cuore, il tuo [scrivi qui il tuo nome]"
+        firma: "Con tutto il cuore, il tuo piccolo!"
       }
     },
 
@@ -108,11 +108,11 @@ window.SITE = {
       /* Frasi che compaiono ogni volta che prova a toccare "No" */
       scherzi: [
         "Ops, il No è scivolato via!",
-        "Riprova… se riesci 😏",
+        "Riprova magari ci riesci 😊",
         "Sei sicura, {soprannome}?",
-        "Il No ha paura di te.",
+        "Il No ti teme.",
         "Dai, il Sí è lì che aspetta!",
-        "Questo bottone non vuole proprio essere premuto."
+        "Io fossi in te premerei l'altro bottone 🤔."
       ]
     },
 
