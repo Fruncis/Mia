@@ -54,7 +54,6 @@ window.SITE = {
         { src: "photos/primo_ricordo.jpg", didascalia: "Il nostro primo ricordo" },
         { src: "photos/il_primo_regalo.jpg", didascalia: "Una giornata perfetta" },
         { src: "photos/un_pensiero_per_te.jpg", didascalia: "Sempre insieme" },
-        { src: "photos/foto5.jpg", didascalia: "Te e i tuoi occhi" },
         { src: "photos/la_mia_piccolina.jpg", didascalia: "La mia piccolina!" },
         { src: "photos/alla_prossima_avventura.jpg", didascalia: "Fino alla prossima avventura" }
       ]
