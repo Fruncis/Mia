@@ -55,7 +55,7 @@ window.SITE = {
         { src: "photos/il_primo_regalo.png", didascalia: "Una giornata perfetta" },
         { src: "photos/un_pensiero_per_te.png", didascalia: "Sempre insieme" },
         { src: "photos/la_mia_piccolina.jpg", didascalia: "La mia piccolina!" },
-        { src: "photos/alla_prossima_avventura.jpg", didascalia: "Fino alla prossima avventura" }
+        /*{ src: "photos/alla_prossima_avventura.jpg", didascalia: "Fino alla prossima avventura" }*/
       ]
     },
 
