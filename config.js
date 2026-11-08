@@ -119,7 +119,7 @@ window.SITE = {
     {
       tipo: "finale",
       illustrazione: "coniglietto",
-      titolo: "Buon compleanno, {nome}!",
+      titolo: "Buon compleanno, {nome} Celeste Garcia!",
       testo: "Grazie di esserci, {soprannome}.\nQuesto è solo l'inizio di una giornata bellissima.",
       bottone: "Rivedi dall'inizio"
     }
